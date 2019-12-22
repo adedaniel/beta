@@ -58,18 +58,18 @@ document.addEventListener('mousemove', onMove);
 document.addEventListener('mouseup', onUp);
 
 // Touch events	
-// pane.addEventListener('touchstart', onTouchDown);
-// document.addEventListener('touchmove', onTouchMove);
-// document.addEventListener('touchend', onTouchEnd);
+pane.addEventListener('touchstart', onTouchDown);
+document.addEventListener('touchmove', onTouchMove);
+document.addEventListener('touchend', onTouchEnd);
 
 
-// function onTouchDown(e) {
-//   onDown(e.touches[0]);
-//   if (e.cancelable) {
-//     e.preventDefault();
-//  }
+function onTouchDown(e) {
+  onDown(e.touches[0]);
+  if (e.cancelable) {
+    // e.preventDefault();
+ }
   
-// }
+}
 
 function onTouchMove(e) {
   onMove(e.touches[0]);		
@@ -409,12 +409,13 @@ function onUp(e) {
 
 @media (max-width: 767px) {
   #pane {
-width: 35% !important;
-max-width: 50%;
+
+max-width: 32%;
 
 
 }
 }
+
 @media (min-width: 768px) {
   #pane {
 
