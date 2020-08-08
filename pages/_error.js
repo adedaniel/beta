@@ -29,7 +29,7 @@ Something's not right...
 <style jsx>
 {`
 .img{
-    width: 100px
+    width: 100px;
 }
 
 .margin{
